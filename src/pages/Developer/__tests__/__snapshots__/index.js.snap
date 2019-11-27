@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Developer renders correctly 1`] = `
+<section>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  />
+  <span
+    className="MuiTypography-root"
+  >
+    Developer name: 
+    Hello
+  </span>
+</section>
+`;
