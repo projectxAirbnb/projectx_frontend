@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
-import './App.css';
-import Pages from './pages'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import pages from './pages';
+import ROUTES from './configs/routes';
 
-class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
-      <Router>
-        <Link to="/dashboard"><h4>Click Me</h4></Link>
+      <main>
         <Switch>
-          <Route exact path="/dashboard" component={Pages.Dashboard}/>
+          <Route exact path={ROUTES.HOME()} component={pages.Home} />
+          <Route exact path={ROUTES.DEVELOPER(':name')} component={pages.Developer} />
+          <Route component={pages.Error404} />
         </Switch>
-      </Router>
+      </main>
     );
   }
 }
 
-export default App;
+App.propTypes = {
+  children: PropTypes.element
+};
