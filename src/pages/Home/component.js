@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ROUTES from '../../configs/routes';
 import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 
 export default class Component extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     this.props.actions.getListOfDevelopers();
   }
 
@@ -27,7 +28,7 @@ export default class Component extends React.Component {
             ))
           }
         </div>
-      );
+      )
     }
   }
 
@@ -40,6 +41,7 @@ export default class Component extends React.Component {
     } else {
       return (
         <section className={classes.container}>
+          <Button>Test</Button>
           {/* <img className={classes.logo} src={IMAGES.LOGO} /> */}
           <h4 variant="display2">App is Ready</h4>
           <h4 className={classes.routeExample}>Route example:</h4>
