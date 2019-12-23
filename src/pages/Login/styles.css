@@ -1,0 +1,7 @@
+.banner {
+  background-image: url('../../assets/auth-banner.jpg');
+  /* background-color: red; */
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}

@@ -64,7 +64,6 @@ module.exports = {
         "react/jsx-uses-react": 2,
         "react/jsx-uses-vars": 2,
         "react/jsx-wrap-multilines": 2,
-        "semi": [2, "always"],
-        "sonarjs/no-extra-arguments": 2
+        "semi": [2, "always"]
     },
 };
