@@ -87,6 +87,8 @@ export default class Component extends React.Component {
             inputReadOnly
             {...item}
           />
+          &nbsp;&nbsp;
+          {item.info || ''}
         </Col>
       </Row>
     );

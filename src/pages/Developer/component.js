@@ -18,7 +18,7 @@ export default class Component extends React.Component {
 }
 
 Component.defaultProps = {
-  match: {},
+  match: {}
 };
 
 Component.propTypes = {

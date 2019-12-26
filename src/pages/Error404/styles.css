@@ -2,10 +2,38 @@
   width: 120px;
   height: 31px;
   background: rgba(255, 255, 255, 0.2);
-  margin: 16px 28px 16px 0;
-  float: left;
+  margin: 16px 28px 16px 20px;
+}
+
+.icon {
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0ad48d !important;
+  padding: 0 10px !important;
+  color: white;
 }
 
 .nav-item {
   padding-top: 20px;
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+  border-right: 3px solid #0ad48d !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  color: #0ad48d !important;
+}
+
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+  color: #0ad48d !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #e7fcf4 !important;
 }

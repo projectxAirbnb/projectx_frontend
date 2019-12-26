@@ -11,13 +11,15 @@ export default {
       label: { id: 'Jam Check-In', en: 'Check-In Time' },
       name: 'checkinTime',
       type: 'timePicker',
-      disabledHours: () => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+      disabledHours: () => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+      info: '(14.00 - 23.00)'
     },
     {
       label: { id: 'Jam Check-Out', en: 'Check-Out Time' },
       name: 'checkoutTime',
       type: 'timePicker',
-      disabledHours: () => [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+      disabledHours: () => [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      info: '(00.00 - 12.00)'
     }
   ],
   fieldArray: [

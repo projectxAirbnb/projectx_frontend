@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import pages from './pages';
 import ROUTES from './configs/routes';
 
@@ -19,7 +18,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-App.propTypes = {
-  children: PropTypes.element
-};
